@@ -7,7 +7,7 @@ SQL-Chat_Agent is a Python project that enables users to interact with an SQL da
 - [Installation](#installation)
 - [Usage](#usage)
 - [Features](#features)
-- [Snippet_of_result](#Snippet of result)
+- [Snippet](#Snippet)
 
 ## Installation
 To set up the project, follow these steps:
