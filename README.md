@@ -56,3 +56,5 @@ print(response)
 
 ## Snippet of Result
 - The snippet of the Home page, query input and query response is in `screenshots` folder.
+
+`![Alt Text](screenshots/screenshot-app.png)`
