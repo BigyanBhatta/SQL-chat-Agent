@@ -50,3 +50,9 @@ from yourmodule import ChatWithSql
 chat_sql = ChatWithSql(db_user='root', db_password='yourpassword', db_host='localhost', db_name='yourdatabase')
 response = chat_sql.message('How many columns are there in the table?')
 print(response)
+
+## Features
+- Interact with an SQL database using natural language.
+- Supports MySQL databases.
+- Leverages OpenAI's GPT-3.5 model for natural language processing.
+- Error handling for SQL parsing errors.
