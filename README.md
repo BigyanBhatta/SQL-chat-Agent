@@ -1,25 +1,21 @@
-# ChatWithSQL
+# SQL-Chat-Agent
 
 ## Description
-ChatWithSQL is a Python project that enables users to interact with an SQL database using natural language queries. By leveraging OpenAI's language model, the project translates user questions into SQL queries and retrieves the corresponding data from the database.
+SQL-Chat_Agent is a Python project that enables users to interact with an SQL database using natural language queries. By leveraging OpenAI's language model, the project translates user questions into SQL queries and retrieves the corresponding data from the database.
 
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
 - [Features](#features)
-- [Examples](#examples)
-- [Configuration](#configuration)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
+- [Snippet_of_result](#Snippet of result)
 
 ## Installation
 To set up the project, follow these steps:
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/ChatWithSQL.git
-    cd ChatWithSQL
+    git clone https://github.com/yourusername/SQL-Chat-Agent.git
+    cd SQL-Chat-Agent
     ```
 
 2. Create and activate a virtual environment (optional but recommended):
@@ -41,7 +37,7 @@ To set up the project, follow these steps:
         ```
 
 ## Usage
-To use ChatWithSQL, create an instance of the `ChatWithSql` class with your database credentials and call the `message` method with your query.
+To use SQL-Chat_Agent, create an instance of the `SQL-Chat-Agent` class with your database credentials and call the `message` method with your query.
 
 ```python
 from yourmodule import ChatWithSql
@@ -50,9 +46,13 @@ from yourmodule import ChatWithSql
 chat_sql = ChatWithSql(db_user='root', db_password='yourpassword', db_host='localhost', db_name='yourdatabase')
 response = chat_sql.message('How many columns are there in the table?')
 print(response)
+```
 
 ## Features
 - Interact with an SQL database using natural language.
 - Supports MySQL databases.
 - Leverages OpenAI's GPT-3.5 model for natural language processing.
 - Error handling for SQL parsing errors.
+
+## Snippet of Result
+- The snippet of the Home page, query input and query response is in `screenshots` folder.
