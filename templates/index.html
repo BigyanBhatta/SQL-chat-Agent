@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatWithSQL</title>
+</head>
+<body>
+    <h1>ChatWithSQL</h1>
+    <form action="/send_message" method="post">
+        <label for="query">Enter your query:</label>
+        <input type="text" id="query" name="query" required>
+        <button type="submit">Submit</button>
+    </form>
+    <div id="response"></div>
+
+    <script>
+        document.querySelector('form').onsubmit = async function(event) {
+            event.preventDefault();
+            const formData = new FormData(this);
+            const response = await fetch('/send_message', {
+                method: 'POST',
+                body: formData
+            });
+            const result = await response.json();
+            document.getElementById('response').innerText = JSON.stringify(result, null, 2);
+        };
+    </script>
+</body>
+</html>
